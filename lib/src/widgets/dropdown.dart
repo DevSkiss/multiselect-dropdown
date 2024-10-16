@@ -105,6 +105,7 @@ class _Dropdown<T> extends StatelessWidget {
                   separatorBuilder: (_, __) =>
                       itemSeparator ?? const SizedBox.shrink(),
                   shrinkWrap: true,
+                  padding: EdgeInsets.zero,
                   itemCount: items.length,
                   itemBuilder: (_, int index) => _buildOption(index, theme),
                 ),
